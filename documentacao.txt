@@ -1,0 +1,20 @@
+https://www.w3schools.com/
+	--> documentação
+	--> design switch button
+	
+https://api.jquery.com/
+	--> biblioteca JQuery para JavaScript
+	--> Documentação
+
+https://api.jqueryui.com/
+	--> Temas e Biblioteca JQuery UI
+	-->	Documentação 
+
+https://www.pingodoce.pt/
+	--> Informações: Contactos e Serviços
+
+https://www.tutorialspoint.com/jqueryui/index.htm
+	--> Documentação
+
+https://scrollrevealjs.org/
+	--> Efeito no scroll

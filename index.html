@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lagoa | Lojas | Pingo Doce</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="https://www.pingodoce.pt/wp-content/themes/pingodoce/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
+	
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+
+</head>
+<body>
+
+	<!-- Top Banner -->
+	<div id="topBanner" class="main-nav">
+		<a href="#topBanner"><img src="img/pingo_doce.jpg" alt="PingoDoce"></a>
+		<ul class="main-nav-bar">
+			<li><a href="#espaco"> Espaço</a></li> 
+			<li><a href="#servicos">Serviços</a></li>
+			<li><a href="#empregados">Empregados</a></li>
+			<li><a href="#recrutamento">Recrutamento</a></li>
+			<li><a href="#encomendas">Encomendas</a></li>	
+			<li><a href="#contatos">Contatos</a></li> 
+		</ul>
+		<span>Página Apresentação da Loja Pingo Doce Lagoa</span>
+	</div>
+
+	<!-- Toggle Tema -->
+	<div class="themeToggler">
+		<label class="switch">
+			<input type="checkbox">
+			<span class="slider round"></span>
+		</label>
+		<label id="theme">Dark Mode</label>
+	</div>
+
+	<!-- Conteudo Central -->
+	<div id="main-content" class="main-content">
+
+		<!-- Espaço -->
+		<div id="espaco" class="espaco">
+			Espaço <br>	
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2770.8418247051036!2d-8.455843811807412!3d37.13184803386121!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x905ffff4579218c4!2sPingo%20Doce!5e1!3m2!1spt-PT!2spt!4v1574253495722!5m2!1spt-PT!2spt" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+			<div>
+				<span>Clique na imagem para supresa</span>
+				<img src="img/loja_frente.png" alt="frenteLoja">
+				<img src="img/loja_interior1.png" alt="interior1">
+				<img src="img/loja_interior2.png" alt="interior2">
+				<img src="img/loja_interior3.png" alt="interior3">
+			</div>
+
+		</div>
+
+		<!-- Serviços-->
+		<div id="servicos" class="servicos">
+			Serviços
+			<ol id="selectable">
+				<li class="ui-widget-content">BemEstar | Corner</li>
+				<li class="ui-widget-content">Café e Bolos</li>
+				<li class="ui-widget-content">Comida pronta</li>
+				<li class="ui-widget-content">Ecoponto com oleões</li>
+				<li class="ui-widget-content">Ecoponto sem oleões </li>
+				<li class="ui-widget-content">Entrega ao Domicílio Estacionamento</li>
+			</ol>
+		</div>
+
+		<!-- Empregados -->
+		<div id="empregados" class="empregados">
+			<span>Empregados</span><br>
+			<img src="img/empregados/chinchong.jpg">
+			<img src="img/empregados/black.jpg">
+			<img src="img/empregados/man.jpg">
+			<img src="img/empregados/woman.jpg">
+			<img src="img/empregados/pingodoceMan.jpg">
+		</div>
+
+		<!-- Recrutamento-->
+		<div id="recrutamento" class="recrutamento">
+			Recrutamento
+			<div id="recebeDados" class="recebeDados"></div>
+			<form class="form" method="post" action="">
+				Nome Completo: <input id="1" type="text" name="nome" required><br>	
+				Ano Nascimento: <input id="2" type="date" name="bday" required><br>	
+				Email: <input id="3" type="email" name="email" required><br>	
+				Cargo a candidatar:<br>	
+				<input id="4" type="radio" name="cargo" value="Reposição" required>Reposição 
+				<input id="4" type="radio" name="cargo" value="Frente Loja" required>Frente Loja  
+				<input id="4" type="radio" name="cargo" value="Peixaria" required>Peixaria 
+				<input id="4" type="radio" name="cargo" value="Talho" required>Talho 
+				<input id="4" type="radio" name="cargo" value="Padaria" required>Padaria 
+				<input id="4" type="radio" name="cargo" value="Frente Loja" required>Charcutaria 
+
+				<br>Horas de emprego: <br>	
+				<input id="5" type="radio" name="time" value="Part-time" required>Part-Time 
+				<input id="5" type="radio" name="time" value="Full-time" required>Full-Time
+
+				<div id="progressbar" class="progressbar"></div>  
+				<input type="submit" value="Send">
+				<input type="reset" value="Limpar" id="clearForm">
+			</form>	
+		</div>
+
+		<!-- Encomendas -->
+		<div id="encomendas" class="encomendas">
+			Encomendas 
+			<div>
+				<label for="tags">Produtos: </label>
+				<input id="tags">
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Contatos -->
+	<div id="contatos" class="contatos">
+		Contatos
+		<div>
+			Utilize os contactos Pingo Doce para falar connosco:
+
+			<span>Loja Lagoa: 282380111
+
+
+				808 204 545
+				ou 210 114 411
+
+				Disponíveis 24h por dia
+			</span>
+		</div>
+	</div> 
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			ScrollReveal({ reset: true });//plugin extterno de scrool
+
+			ScrollReveal().reveal("*");//plugin extterno de scroll
+
+			$("input[type='checkbox']").change(function() { //liga e desliga a class "theme"
+				if (this.checked){
+					$("body").toggleClass("theme");
+					$('#theme').text('White Mode');
+				}
+				else{
+					$("body").toggleClass("theme");
+					$('#theme').text('Dark Mode');
+				}
+			});
+
+			//Espaço	
+			$("#espaco").find("img").click(function(event) {
+				$(this).slideUp(2000).slideDown(2000); //ao tocar na imagem faz esta animacao
+			});
+
+			//Serviços
+			$( "#selectable" ).selectable(); //servicos sao selecionados ||apenas para decoracao
+
+			//Empregados
+			$("#empregados img").wrap("<span></span>");
+
+			$('#empregados span').hover(function(){ //JQuery UI effect Hightlight
+				$(this).next().toggle("highlight", {}, 400);
+			},function(){ 
+				$(this).next().toggle("highlight", {}, 1);
+			});
+
+			//recrutamento
+			var x = 0;//barra progresso JQuery UI
+			$("#progressbar").progressbar({value: x});
+
+			$("form input").change(function() {  //aumenta o valor de progresso por cada input escrito
+				var x = 0;
+				if ($("#1").val().length > 0) x += 20;
+				if ($("#2").val().length > 0) x += 20;
+				if ($("#3").val().length > 0) x += 20;
+				if ($("#4").val().length > 0) x += 20;
+				if ($("#5").val().length > 0) x += 20;
+				$("#progressbar").progressbar("option", "value", x);
+				return false;
+			});
+
+			$('.form').submit(function(){
+				$("#recebeDados").show(); 
+				$.ajax({
+					url: 'envia.php', 
+					type: 'POST', 
+					data: $('.form').serialize(),
+					success: function(data){
+						$('.recebeDados').html(data);
+					}
+				}); 
+				return false;
+			});
+
+			$("#clearForm").click(function(event) {
+				$("#recebeDados").hide();
+				var x = 0;
+				$("#progressbar").progressbar("option", "value", x);
+			});
+
+			//Encomendas
+			var produtos = []; //array para lista produtos
+			$.getJSON("produtos", function(json){//procura e preenchimentos da lista de array a partir do json
+				for (var i = 0; i < json.itens.length; i++){
+					produtos[i] = json.itens[i]; //console.log(produtos[i]);
+				}
+			});
+
+			//Widget autocomplete JQuery UI
+			$("#tags").autocomplete({
+				source: produtos,
+				delay: 0,
+			});
+		});
+	</script>
+
+</body>
+</html>

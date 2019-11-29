@@ -1,0 +1,219 @@
+::selection{
+	background: #ffbe00 ;
+} 
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden; /* esconder a barra de navegacao */
+	scrollbar-width: none;
+	color: white;
+	background: #001621;
+	font-family: "Open Sans", sans-serif !important;
+}
+img{
+	position: relative; 
+}
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:hover{
+	cursor: pointer;
+	transition: all 0.3s ease-out !important;
+	color: #000000 !important;
+}
+ul{
+	list-style: none;
+}
+div{
+	margin: 22px 0;
+	/* width: 100vh; */
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+input:checked + .slider {
+	background-color: #5b5b5b;
+}
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+.slider.round:before {
+	border-radius: 50%;
+}
+/*top banner*/
+.main-nav{
+	z-index: 10000;
+	bottom: 33em;
+	font-size: 15px;
+	display: flex;
+	justify-content: space-between;
+	outline: 3px solid yellow;
+	background: #8DC540;
+}
+.main-nav-bar{
+	display: flex;
+	margin: 109px 0px 0 0px;
+	padding: 0;
+}
+.main-nav-bar li{
+	position: relative;
+	margin: 0px 22px;
+}
+.theme{
+	color: #001621 !important;
+	background: white !important;
+}
+/*main-content*/
+.main-content{
+	position: relative;
+}
+/*Espaco*/
+.espaco{
+	outline: 3px solid red;;
+}
+.espaco div{
+	display: initial;
+}
+.espaco span{
+	position: absolute;
+}
+.espaco img{
+	margin: 0 20px 0 110px;
+	width: 330px;
+	height: 300px;
+}
+/*Servicos*/
+.servicos{
+	outline: 3px solid red;;
+}
+#feedback { font-size: 1.4em; }
+#selectable .ui-selecting { background: #FECA40; }
+#selectable .ui-selected { background: #F39814; color: white; }
+#selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+#selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+
+/*Empregados*/
+.empregados{
+	outline: 3px solid red;;	
+}
+/*Recrutamento*/
+.recrutamento{
+	outline: 3px solid red;;
+}
+.recrutamento div {
+	border-radius: 5px;
+	
+	padding: 0;
+}
+.recebeDados{
+	background-color: black !important;
+	color: white;
+}
+input[type=text], input[type=email],select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=submit]{
+	width: 50%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=reset]{
+	position: absolute;
+	width: 50%;
+	background-color: red;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=submit]:hover{
+	background-color: #45a049;
+}
+input[type=reset]:hover {
+	background-color: #f53c3c;
+}
+.progressbar{
+	width: 140px;
+	height: 10px !important;
+}
+.ui-progressbar .ui-progressbar-value {
+	padding: 0px !important;
+	margin: -1px;
+	height: 100%;
+	background: #39a26b;
+	border: 1px solid #DDDDDD;
+	color: #333333;
+}
+.ui-widget.ui-widget-content {
+	width: 100%;
+	height: 30px !important;
+}
+/*Encomendas*/
+.encomendas{
+	outline: 3px solid red;
+	height: 300px;
+}
+.ui-menu .ui-menu-item-wrapper {
+	position: relative;
+	padding: 3px 1em 3px .4em;
+	background-color: red;
+}
+/*Contatos*/ 
+.contatos{
+	outline: 3px solid red;
+}

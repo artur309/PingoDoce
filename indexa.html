@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+</head>
+<body>
+
+	<form>
+		One<input id="1" type="name" name="name" class='moo'><br>
+		Two<input id="2" type="name" name="name" class='moo'><br>
+		Three<input id="3" type="name" name="else" class='moo'><br>
+		Four<input id="4" type="name" name="name" class='moo'><br>
+		Five<input id="5" type="name" name="name" class='moo'><b/>
+	</form> 
+
+	<div id="progressbar" class="progressbar"></div>  
+	<form>
+		<input type="checkbox">
+	</form>
+	<label id="ok">__</label>
+	<script>
+		
+		$(document).ready(function(){
+			
+			$("input[type='checkbox']").change(function() {
+				if(this.checked) {
+					$("body").toggleClass("blue");
+				}
+				else{
+
+					$("body").toggleClass("blue");$("#ok").show();
+				}
+			});
+
+			var x = 0;
+			$("#progressbar").progressbar({
+				value: x,
+			});
+
+			$(".moo").change(function() {
+				var pbVal = 0;
+				if ($("#1").val().length > 0) pbVal += 20;
+				if ($("#2").val().length > 0) pbVal += 20;
+				if ($("#3").val().length > 0) pbVal += 20;
+				if ($("#4").val().length > 0) pbVal += 20;
+				if ($("#5").val().length > 0) pbVal += 20;
+				$( "#progressbar" ).progressbar("option", "value", pbVal);
+				return false;
+			});
+		});
+
+	</script>
+
+</body>
+</html>
